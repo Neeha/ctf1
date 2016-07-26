@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home Page-CEG Tech Forum" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Chrome Tab Color -->
+    <meta name="theme-color" content="#EE6E73">
+
+
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<!-- custom demo style -->
+		<link rel="stylesheet" type="text/css" href="css/demo3.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+    <title>Home - CEG Tech Forum</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "http://cms.cegtechforum.com/initiatives.json";
+
+	xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var myArr = JSON.parse(xmlhttp.responseText);
+        myFunction(myArr);
+    }
+};
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+
+	function myFunction(arr) {
+		var out = "";
+		var i;
+		for(i = 0; i < arr.length; i++) {
+			out += '<a href="' + arr[i].url + '">' + 
+			arr[i].display + '</a><br>';
+		}
+		document.getElementById("id01").innerHTML = out;
+}
+</script>
+  </head>
+
+  <body class="home-page  animated fadeIn" style="visibility:hidden;">
+
+    <header>
+      <nav class="top-nav">
+          <div class="container row">
+            <div id="menuIcon" class="col s3"><a href="#" data-activates="nav-mobile"
+              class="button-collapse hide-on-large-only valign"><i class="material-icons valign">menu</i></a>
+            </div>
+            <div class="col s9"><a class="page-title"><span class="title-size">Home</span></a>
+            </div>
+          </div>
+      </nav>
+      <ul id="nav-mobile" class="side-nav fixed go">
+        <li>
+          <div id="logo-div">
+            <img id="logo-image" src="images/bull.png" width=100% height=200 />
+          </div>
+        </li>
+        <li class="bold active hoverable bracket_effect"><a href="#" class="waves-effect waves-red">
+          <span class="valign" style="display:inline;">
+            <i class="material-icons side-nav-icon">turned_in_not</i>
+          </span> Home
+        </a>
+        </li>
+        <li class="bold hoverable bracket_effect"><a href="about.html" class="waves-effect waves-green">
+          <span class="valign" style="display:inline;">
+            <i class="material-icons side-nav-icon">info_outline</i>
+          </span> About
+        </a>
+        </li>
+        <li class="bold"><a href="studir.html" class="waves-effect waves-yellow hoverable bracket_effect">
+            <span class="valign" style="display:inline;">
+              <i class="material-icons side-nav-icon">supervisor_account</i>
+            </span> Student Directors
+        </a>
+        </li>
+        <li class="bold"><a href="initiatives.html" class="waves-effect waves-teal hoverable bracket_effect">
+            <span class="valign" style="display:inline;">
+              <i class="material-icons side-nav-icon">question_answer</i>
+            </span> Initiatives
+        </a>
+        </li>
+        </ul>
+    </header>
+    <main>
+		<div class="container">
+			<div class="row">
+				<div class="col s6 pull-s1">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/s720x720/13770268_849510661848828_4841353326107248431_n.jpg?oh=591b72573dc5d748c5feb0989e5365b1&oe=5824D53C&__gda__=1479839214_4d3347f464b1ee42cd8e3226d665b552" height="400">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>Speech is power - to persuade, to promote, to prevail.
+
+							If you have it in you to speak out, then we'll give you the platform to do so. Whether you are skilled orator or would like to be, can sell anything, convince anyone or want to learn how to, interact with the outside world or work with the media, whatever your dreams and abilities may be, we have a place for you. 
+
+							Join us for the Open Call for Marketing, Guest Lectures, Media and Industrial Relations on the 26th of July, 2016, 5 pm at SnH, hall number 110. 
+
+							Be a part of Kurukshetra 2017.</p>
+						</div>
+					</div>			
+				</div>
+			
+				<div class="col s6 push-s1">
+					<div class="card" width="20">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAnyIdyyD_5rglR&url=http%3A%2F%2Fblog.cegtechforum.com%2Fwp-includes%2Fimages%2Fsmilies%2Fsimple-smile.png" height="400">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>Take a look at the revolutionary app that the world can't get enough of! Take a look at the world of Pokemon Go.</p>
+						</div>
+					</div>			
+				</div>					
+			</div>	
+
+			<div class="row">
+				<div class="col s6 pull-s1">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAbtu4z5DIF4i7A&url=https%3A%2F%2Flh6.googleusercontent.com%2FOFy0iPuDALMFK9Q8K9WvnrMYIGGyr7IE5j-ijQPR0tmQHvpNk47trMzvYBiIaew5Xoo%3Dw1200-h630-p" height="400">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>The bigger the challenge, the greater the opportunity.
+
+							Challenge yourself to do more, do better this year with Kurukshetra 2017 and take your first step into new and exciting opportunities. Sign up at the link below. 
+
+							www.recruitment.cegtechforum.com</p>
+						</div>
+					</div>			
+				</div>
+			
+				<div class="col s6 push-s1">
+					<div class="card" width="20">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/s720x720/13590244_842746799191881_1650511609595628434_n.jpg?oh=cb55e62d2bc73146bd730ed4b94e3441&oe=5817F8F3&__gda__=1479125742_3444b3f2d009a86ecd937301447fa864" height="400">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<p><a href="#">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>Want to be in the thick of the things happening in CEG? Do you relish organising an event or workshop, representing CEG at other venues or revel in writing? Or do you simply want to part of something much bigger than one person? If so, then this, is your chance to do just that. 
+
+							Join us at the open call for Events, Workshops, Xceed & Karnival, Contents and Initiatives on the 14th of July, 2016, 5 pm at SnH 110. 
+
+							Be a part of Kurukshetra 2017.</p>
+						</div>
+					</div>			
+				</div>					
+			</div>	
+		</div>			
+    </main>
+    <footer class="page-footer fixed">
+      <div class="container">
+          <div class="row">
+            <div class="col s12">
+                    <h5 class="white-text">Good Day</h5>
+                    <span>
+                      Old No 9<br>
+                    </span>
+                    <span>
+                      New no 19<br>
+                    </span>
+                    <span>
+                      Erran Street<br>
+                    </span>
+                    <span>
+                      Purasawalkam - 600007<br>
+                    </span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+        <div class="container">
+            © 2016-2017 CEG Tech Forum, All rights reserved.
+        </div>
+    </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+    <script type="text/javascript" src="js/main_init.js"></script>
+
+  </body>
+
+</html>

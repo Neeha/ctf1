@@ -1,0 +1,223 @@
+/*.stage {
+	padding: 0;
+}
+
+*/
+
+
+.collapsible-body{
+	/*margin: 0 auto;*/
+	overflow: auto;
+	position: relative;
+	padding-bottom: 8%;
+	padding-top: 8%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+}
+
+
+.collapsible-body li {
+	height: 350px;
+}
+
+
+
+.scene {
+	position: relative;
+	width: 220px;
+	height: 320px;
+	perspective: 2000px;
+	/*background-color: white;
+	border: 3px solid #73AD21;*/
+	margin: auto;
+	padding: 0;
+	display: block;
+}
+
+.filler{
+	width: 20px;
+	height: 20px;
+}
+
+
+@media screen and (max-width: 700px){
+
+	.collapsible-body ul {
+	    -moz-column-count: 1;
+	    -moz-column-gap: 20px;
+	    -webkit-column-count: 1;
+	    -webkit-column-gap: 20px;
+	    column-count: 1;
+	    column-gap: 20px;
+	}
+
+}
+
+@media screen and (min-width: 700px){
+
+
+	.collapsible-body ul {
+	    -moz-column-count: 2;
+	    -moz-column-gap: 20px;
+	    -webkit-column-count: 2;
+	    -webkit-column-gap: 20px;
+	    column-count: 2;
+	    column-gap: 20px;
+	}
+
+}
+
+
+@media screen and (min-width: 994px) and (max-width: 1100px){
+
+
+	.collapsible-body ul {
+	    -moz-column-count: 1;
+	    -moz-column-gap: 20px;
+	    -webkit-column-count: 1;
+	    -webkit-column-gap: 20px;
+	    column-count: 1;
+	    column-gap: 20px;
+	}
+
+}
+
+
+
+.movie .poster {
+  box-shadow: 0px 5px 5px #888888;
+}
+.movie .info{
+	box-shadow: 0px 5px 2px #888888;
+}
+
+
+.movie {
+	width: 200px;
+	height: 300px;
+	margin: auto;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-100px);
+	-moz-transform: translateZ(-100px);
+	transform: translateZ(-100px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.movie:hover {
+	-webkit-transform: rotateY(-78deg) translateZ(20px);
+	-moz-transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-78deg) translateZ(20px);
+}
+
+.movie .poster,
+.movie .info {
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.movie .poster  {
+	-webkit-transform: translateZ(100px);
+	-moz-transform: translateZ(100px);
+	transform: translateZ(100px);
+	/*background-size: cover;*/
+	/*background-repeat: no-repeat;*/
+}
+
+.movie .info {
+	-webkit-transform: rotateY(90deg) translateZ(100px);
+	-moz-transform: rotateY(90deg) translateZ(100px);
+	transform: rotateY(90deg) translateZ(100px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+
+/*************************************
+Shadow beneath the 3D object
+**************************************/
+
+.csstransforms3d .movie::after {
+	content: '';
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) translateY(100px);
+	-moz-transform: rotateX(90deg) translateY(100px);
+	transform: rotateX(90deg) translateY(100px);
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .movie:hover::after {
+	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+}
+
+/*************************************
+Generate "lighting" using box shadows
+**************************************/
+
+.movie .poster,
+.movie .info,
+.movie .info header {
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+}
+	transition: box-shadow 350ms;
+
+.csstransforms3d .movie .poster {
+	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+}
+
+.csstransforms3d .movie:hover .poster {
+	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+}
+
+.csstransforms3d .movie .info,
+.csstransforms3d .movie .info header {
+	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+}
+
+.csstransforms3d .movie:hover .info,
+.csstransforms3d .movie:hover .info header {
+	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+}
+
+/*************************************
+Fallback
+**************************************/
+.no-csstransforms3d .movie .poster,
+.no-csstransforms3d .movie .info {
+	position: absolute;
+}
+
+/*************************************
+Media Queries
+**************************************/
+/*@media screen and (max-width: 60.75em){
+	.scene {
+		float: none;
+		margin: 30px auto 60px;
+	}
+}*/
+
+
+/*@media screen and (max-width: 60.75em){
+	.scene {
+		float: none;
+		margin: 30px auto 60px;
+	}
+}*/

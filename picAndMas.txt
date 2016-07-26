@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "full_picture": "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/s720x720/13770268_849510661848828_4841353326107248431_n.jpg?oh=591b72573dc5d748c5feb0989e5365b1&oe=5824D53C&__gda__=1479839214_4d3347f464b1ee42cd8e3226d665b552",
+      "message": "Speech is power - to persuade, to promote, to prevail.
+
+If you have it in you to speak out, then we'll give you the platform to do so. Whether you are skilled orator or would like to be, can sell anything, convince anyone or want to learn how to, interact with the outside world or work with the media, whatever your dreams and abilities may be, we have a place for you. 
+
+Join us for the Open Call for Marketing, Guest Lectures, Media and Industrial Relations on the 26th of July, 2016, 5 pm at SnH, hall number 110. 
+
+Be a part of Kurukshetra 2017.",
+      "id": "196203637179537_849510661848828"
+    },
+    {
+      "full_picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAnyIdyyD_5rglR&url=http%3A%2F%2Fblog.cegtechforum.com%2Fwp-includes%2Fimages%2Fsmilies%2Fsimple-smile.png",
+      "message": "Take a look at the revolutionary app that the world can't get enough of! Take a look at the world of Pokemon Go.",
+      "id": "196203637179537_844500245683203"
+    },
+    {
+      "full_picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQAbtu4z5DIF4i7A&url=https%3A%2F%2Flh6.googleusercontent.com%2FOFy0iPuDALMFK9Q8K9WvnrMYIGGyr7IE5j-ijQPR0tmQHvpNk47trMzvYBiIaew5Xoo%3Dw1200-h630-p",
+      "message": "The bigger the challenge, the greater the opportunity.
+
+Challenge yourself to do more, do better this year with Kurukshetra 2017 and take your first step into new and exciting opportunities. Sign up at the link below. 
+
+www.recruitment.cegtechforum.com",
+      "id": "196203637179537_844451735688054"
+    },
+    {
+      "full_picture": "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/s720x720/13590244_842746799191881_1650511609595628434_n.jpg?oh=cb55e62d2bc73146bd730ed4b94e3441&oe=5817F8F3&__gda__=1479125742_3444b3f2d009a86ecd937301447fa864",
+      "message": "Want to be in the thick of the things happening in CEG? Do you relish organising an event or workshop, representing CEG at other venues or revel in writing? Or do you simply want to part of something much bigger than one person? If so, then this, is your chance to do just that. 
+
+Join us at the open call for Events, Workshops, Xceed & Karnival, Contents and Initiatives on the 14th of July, 2016, 5 pm at SnH 110. 
+
+Be a part of Kurukshetra 2017.",
+      "id": "196203637179537_842746799191881"
+    },
+    {
+      "full_picture": "https://fbexternal-a.akamaihd.net/safe_image.php?d=AQCLmpmeyNR17RTc&url=http%3A%2F%2Fblog.cegtechforum.com%2Fwp-content%2Fuploads%2F2016%2F06%2FTitle.jpg",
+      "id": "196203637179537_829339093865985"
+    }
+  ],
+  "paging": {
+    "previous": "https://graph.facebook.com/v2.6/196203637179537/posts?fields=full_picture,message&limit=5&format=json&since=1469335732&access_token=EAACEdEose0cBAK7xb1Ee9eZASxQnYijAgOmDGcmkPipSbusZBHWoG5RNYoSRXZBvsV0P1dm6n0XSIKkvvIpCWhZAgocMc6xn5epbz4RxiBgRYdIJMYpnrxZAIitdwrsQDxw65Uofqv2ZAc3nwvoXwq5N8r9omZBycjOPvyTZB0oSTAZDZD&__paging_token=enc_AdBUEZB58mRb87KGScQliSpryPqyjAykMGMQyL6QcBdacLJXhkZBuPM7WcLbnPe5674t8PZCRNyY2J2Fc1F3W5ibjhr49PQXrojywesOQ8gBei0yAZDZD&__previous=1",
+    "next": "https://graph.facebook.com/v2.6/196203637179537/posts?fields=full_picture,message&limit=5&format=json&access_token=EAACEdEose0cBAK7xb1Ee9eZASxQnYijAgOmDGcmkPipSbusZBHWoG5RNYoSRXZBvsV0P1dm6n0XSIKkvvIpCWhZAgocMc6xn5epbz4RxiBgRYdIJMYpnrxZAIitdwrsQDxw65Uofqv2ZAc3nwvoXwq5N8r9omZBycjOPvyTZB0oSTAZDZD&until=1465911310&__paging_token=enc_AdAc6VqimSUMyiOIREuRoyyecXkh06BthBv0UkRjBWwcQZAObQ2lZAtgoqzO4Y7Ol4Ae467QJ6UdubrZAh1UeKpczCGZAq1Ny2n33A0hhiDdsgTWdgZDZD"
+  }
+}

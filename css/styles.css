@@ -1,0 +1,292 @@
+#init_image{
+  max-height: 400px
+}
+
+
+@media (min-width: 991px) {
+  main,footer,nav {
+    padding-left: 240px;
+  }
+}
+
+
+
+
+
+/*Preloading*/
+
+.loading_effect{
+  /*position: absolute;
+  height: 100%;
+  text-align: center;*/
+}
+
+
+
+
+/*Navbar*/
+
+nav.top-nav {
+    height: 122px;
+    box-shadow: 5;
+}
+nav.top-nav a.page-title {
+    line-height: 122px;
+    font-size: 48px;
+}
+
+#logo-div {
+  height: 200px;
+  width: 100%;
+  box-shadow: 0px 2px 5px #888888;
+}
+
+.side-nav {
+  padding-top: 0;
+  width: 260px;
+}
+
+#menuIcon {
+
+  -ms-transform: translate(0px, 30px); /* IE 9 */
+  -webkit-transform: translate(0px, 30px); /* Safari */
+  transform: translate(0px, 30px);
+}
+
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
+    background-color: black;
+}
+nav .brand-logo-center {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+/*
+main {
+  background-color: #FAFAFA;
+}*/
+
+/* STICKY FOOTER IN CASE OF LESS CONTENT */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/*PADDING*/
+
+main{
+  padding-top: 30px;
+}
+
+main .container {
+  padding-left: 15px;
+}
+
+
+
+/*Page specific CSS*/
+
+.about-page nav.top-nav,
+.about-page footer {
+  background: #81C784;
+}
+
+
+.init-page nav.top-nav,
+.init-page footer {
+  background: #4DB6AC;
+}
+
+.studir-page nav.top-nav,
+.studir-page footer {
+  /*background: rgba(255, 235, 59,0.85);*/
+  background: #FFD54F;
+}
+
+.home-page nav.top-nav,
+.home-page footer {
+  background: rgba(244, 67, 54, 0.7);
+}
+
+
+
+/*STUDIR PAGE NAME PLACEMENT*/
+
+@media (min-width: 991px) {
+
+  .studir-page .collapsible {
+    /*width: 80%;
+    margin-left: 200px;*/
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .studir-page .collapsible {
+    /*width: 80%;
+    margin-left: 200px;*/
+  }
+}
+
+
+
+/*STUDIR PAGE collapsible header*/
+
+.studir-page .collapsible-header {
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20;
+}
+
+.studir-page .collapsible-body {
+
+  background-color: #EEEEEE;
+}
+
+
+
+
+/*Side Nav Logo*/
+
+
+
+
+
+
+/*Hover effect on Side-nav items*/
+
+.go a:before,
+.go a:after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.go a:before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    transform: translate(20px);
+}
+
+.go a:after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translate(-20px);
+    -moz-transform: translate(-20px);
+    transform: translate(-20px);
+}
+
+.go a:hover:before,
+.go a:hover:after,
+.go a:focus:before,
+.go a:focus:after {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
+}
+
+
+
+
+
+/*Rotate on hover*/
+
+li .zimg {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+li:hover .zimg {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+
+/* Logo */
+
+#logo-container {
+    margin-top: 32px;
+    height: 60px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto
+    background-color: black;
+}
+#front-page-logo {
+    display: inline-block;
+    height: 100%;
+    pointer-events: none
+}
+
+#brand-name{
+
+}
+
+@media only screen and (max-width: 992px) {
+    #front-page-nav ul.side-nav li {
+        float: none;
+        padding: 0 15px
+    }
+    #front-page-nav ul.side-nav li:hover {
+        background-color: #ddd
+    }
+    #front-page-nav ul.side-nav li .active {
+        background-color: transparent
+    }
+    #front-page-nav ul.side-nav a {
+        color: #444
+    }
+}
+
+
+/*Side Nav Icon*/
+.side-nav-icon {
+    -ms-transform: translate(0px, 6px); /* IE 9 */
+    -webkit-transform: translate(0px, 6px); /* Safari */
+    transform: translate(0px, 6px);
+}
+
+
+/*PAGE TITLE FIX*/
+
+
+@media (max-width: 480px) {
+  .page-title .title-size {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 270px) {
+  .page-title .title-size {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 635px) {
+  .studir-page .page-title .title-size {
+    font-size: 30px;
+  }
+}
+@media (max-width: 430px) {
+  .studir-page .page-title .title-size {
+    font-size: 23px;
+  }
+}
