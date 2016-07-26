@@ -18,7 +18,7 @@
 
 
 .collapsible-body li {
-	height: 350px;
+	height: 250px;
 }
 
 
@@ -26,7 +26,7 @@
 .scene {
 	position: relative;
 	width: 220px;
-	height: 320px;
+	height: 220px;
 	perspective: 2000px;
 	/*background-color: white;
 	border: 3px solid #73AD21;*/
@@ -95,7 +95,7 @@
 
 .movie {
 	width: 200px;
-	height: 300px;
+	height: 200px;
 	margin: auto;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
@@ -115,10 +115,11 @@
 }
 
 .movie .poster,
+.movie .poster img,
 .movie .info {
 	position: absolute;
 	width: 200px;
-	height: 300px;
+	height: 200px;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
